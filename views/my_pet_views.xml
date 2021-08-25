@@ -21,11 +21,7 @@
                             <group>
                                 <field name="dob"/>
                                 <field name="gender"/>
-                            </group>
-                            <group>
-                            	<field name="species"/>
-                            	<field name="hobbies"/>
-                            </group>                            
+                            </group>                         
                         </group>
                         <notebook>
                             <page name="general_information" string="General Information">
@@ -66,8 +62,6 @@
                     <field name="weight"/>                    
                     <field name="dob"/>
                     <field name="gender"/>
-                    <field name="species"/>
-                    <field name="hobbies"/>
                     <field name="owner_id"/>
                 </tree>
             </field>
