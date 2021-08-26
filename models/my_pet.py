@@ -11,11 +11,11 @@ class MyPet(models.Model):
     description = fields.Text('Pet Description')
     age = fields.Integer('Pet Age', default=1)
     weight = fields.Float('Weight (kg)')
+    dob = fields.Date('DOB', required=False)
     gender = fields.Selection([
         ('male', 'Male'),
         ('female', 'Female')
-    ], string='Gender', default='male')
-   
+    ], string='Gender', default='male')   
     pet_image = fields.Binary("Pet Image", attachment=True, help="Pet Image")    
     owner_id = fields.Many2one('res.partner', string='Owner')
     product_ids = fields.Many2many(comodel_name='product.product', 
