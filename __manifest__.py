@@ -8,11 +8,12 @@
     'category': 'Uncategorized',
     'version': '0.1',
     'depends': [
-        'product',
+        'product', 'base'
     ],
     'data': [
-        'security/ir.model.access.csv',
         'views/my_pet_views.xml',
+        'views/owner_views.xml',
+        'views/menu.xml',
     ],
     'installable': True,
     'application': True,

@@ -4,7 +4,7 @@ import datetime
 
 
 class MyPet(models.Model):
-    _name = "my.pet"
+    _name = "mp.pet"
     _description = "My pet model"
 
     name = fields.Char('Pet Name', required=True)
@@ -29,5 +29,10 @@ class MyPet(models.Model):
         ('male', 'Male'),
         ('female', 'Female')
     ], string='Gender', default='male')
+
     pet_image = fields.Binary("Pet Image", attachment=True, help="Pet Image")
-    owner_id = fields.Many2one('res.partner', string='Owner')
+
+    # owner_id = fields.Many2many(comodel_name="mp.pet", string="Pet's Owner",
+    #                             relation='pet_owner_rel', readonly=True)
+
+

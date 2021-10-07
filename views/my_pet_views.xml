@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="my_pet_form" model="ir.ui.view">
-        <field name="name">my.pet.form</field>
-        <field name="model">my.pet</field>
-        <field name="arch" type="xml">
-            <tree>
-                <field name="name"/>
-                <field name="owner_id"/>
-                <field name="pet_dob"/>
-                <field name="pet_age"/>
-<!--                <group>-->
-<!--                    <group>-->
-<!--                    </group>-->
-<!--                    <group>-->
-<!--                    </group>-->
-<!--                </group>-->
-            </tree>
-        </field>
-    </record>
 
-    <record id="mypet_main_act" model="ir.actions.act_window">
-        <field name="name">my pet</field>
+    <record id="mypet_pet_act" model="ir.actions.act_window">
+        <field name="name">Thu cung</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">my.pet</field>
+        <field name="res_model">mp.pet</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="mypet_menu" name="Cửa hàng my pet" sequence="1"/>
-    <menuitem id="mypet_menu_item" name="mypet menu item"
-              parent="mypet_menu"
-              action="mypet_main_act" sequence="1"/>
+<!--    <record id="mypet_pet_tree" model="ir.ui.view">-->
+<!--        <field name="name">Thu cung</field>-->
+<!--        <field name="model">mypet.pet</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree string="Thu cung">-->
+<!--                <field name="name"/>-->
+<!--                <field name="gender"/>-->
+<!--                <field name="nickname"/>-->
+<!--                <field name="owner_id"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
 
 </odoo>

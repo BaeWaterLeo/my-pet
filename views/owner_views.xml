@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="mypet_owner_act" model="ir.actions.act_window">
+        <field name="name">owner</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="mypet_owner_tree" model="ir.ui.view">
+        <field name="name">Owner</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <tree string="owner tree view">
+                <field name="name"/>
+                <field name="pet"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

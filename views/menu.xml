@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="mypet_root_menu" name="Thu vien cua toi" sequence="1"/>
+            <menuitem id="mypet_pet_menu" name="Pet" parent="mypet_root_menu"
+                        action="mypet_pet_act" sequence="1"/>
+            <menuitem id="mypet_owner_menu" name="owner" parent="mypet_root_menu"
+                        action="mypet_owner_act" sequence="5"/>
+
+    </data>
+</odoo>
